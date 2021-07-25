@@ -17,8 +17,7 @@ See the License for the specific language governing permissions and limitations 
 Amplify Params - DO NOT EDIT */
 
 const AWS = require('aws-sdk')
-const uuid = require('uuid/v4')
-//const { v4: uuid } = require('uuid')
+const { v4: uuid } = require('uuid')
 
 /* Cognito SDK */
 const cognito = new AWS.CognitoIdentityServiceProvider({ apiVersion: '2016-04-18' })
@@ -57,9 +56,11 @@ app.use(awsServerlessExpressMiddleware.eventContext())
 // Enable CORS for all methods
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
-  //res.header("Access-Control-Allow-Headers", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+  res.header("Access-Control-Allow-Headers", "*");
+  //res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
   res.header('Access-Control-Allow-Methods', "*");
+  res.header("Access-Control-Allow-Credentials", true),
+
   next();
 });
 
