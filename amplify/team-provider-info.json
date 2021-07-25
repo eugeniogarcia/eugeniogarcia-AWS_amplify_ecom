@@ -13,7 +13,14 @@
     },
     "categories": {
       "auth": {
-        "ecommerceappcb1f1b5a": {}
+        "ecommerceappcb1f1b5a": {},
+        "ecommerceapp8797b5e7": {}
+      },
+      "function": {
+        "ecommercefunction": {
+          "deploymentBucketName": "amplify-ecommerceapp-dev-222620-deployment",
+          "s3Key": "amplify-builds/ecommercefunction-43714966382f35734655-build.zip"
+        }
       }
     }
   }

@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "ecommerceappcb1f1b5a_identitypool_cb1f1b5a",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "ecommecb1f1b5a",
-    "userPoolName": "ecommerceappcb1f1b5a_userpool_cb1f1b5a",
+    "identityPoolName": "ecommerceapp8797b5e7_identitypool_8797b5e7",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "ecomme8797b5e7",
+    "userPoolName": "ecommerceapp8797b5e7_userpool_8797b5e7",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "ecommecb1f1b5a_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ecomme8797b5e7_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "cb1f1b5a",
-    "resourceName": "ecommerceappcb1f1b5a",
+    "sharedId": "8797b5e7",
+    "resourceName": "ecommerceapp8797b5e7",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
